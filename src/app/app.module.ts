@@ -5,18 +5,21 @@ import { AppComponent } from './app.component';
 import { PollCreateComponent } from './poll-create/poll-create.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PollComponent } from './poll/poll.component';
+import { PollVoteComponent } from './poll-vote/poll-vote.component';
+import { PollService } from './poll-service/poll.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     PollCreateComponent,
-    PollComponent
+    PollComponent,
+    PollVoteComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [PollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
