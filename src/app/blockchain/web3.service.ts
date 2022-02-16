@@ -4,6 +4,7 @@ import { Contract } from 'web3-eth-contract';
 
 declare var window: any;
 const contractAbi = require('./contractABI.json');
+// import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
